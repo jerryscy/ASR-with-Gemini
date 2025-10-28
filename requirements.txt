@@ -1,0 +1,12 @@
+numpy==2.2.4
+torch
+torchaudio
+onnxruntime
+silero-vad
+google-cloud-aiplatform
+google-genai
+python-dotenv
+google-adk
+websockets
+google-cloud-texttospeech
+google-cloud-resource-manager
