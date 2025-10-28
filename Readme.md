@@ -48,18 +48,13 @@
 
 1.  **在项目根目录中创建一个 `.env` 文件**，并添加您的 Vertex AI 项目 ID 和位置：
     ```env
-    VERTEX_AI_PROJECT_ID="your-gcp-project-id"
-    VERTEX_AI_LOCATION="your-gcp-location"
+    GOOGLE_CLOUD_PROJECT="your-gcp-project-id"
+    GOOGLE_CLOUD_LOCATION="your-gcp-location"
     ```
 
 2.  **使用 Google Cloud 进行身份验证：**
     ```bash
     gcloud auth application-default login
-    ```
-
-3.  **设置 SSL_CERT_FILE 环境变量：**
-    ```bash
-    export SSL_CERT_FILE=$(python3 -m certifi)
     ```
 
 ## 用法
@@ -80,5 +75,4 @@
 ## 故障排除
 
 *   **身份验证错误：** 确保您已使用 `gcloud` 进行身份验证，并在您的 Google Cloud 项目中具有 Vertex AI 或 Gemini API 的必要权限。
-*   **SSL 错误：** 确保您已正确设置 `SSL_CERT_FILE` 环境变量。
 *   **麦克风问题：** 检查您的浏览器和系统设置，确保可以访问麦克风。
